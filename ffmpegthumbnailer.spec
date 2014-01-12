@@ -1,7 +1,7 @@
 Summary:	Lightweight video thumbnailer
 Name:		ffmpegthumbnailer
 Version:	2.0.8
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Applications/Graphics
 Source0:	http://ffmpegthumbnailer.googlecode.com/files/%{name}-%{version}.tar.gz
@@ -9,7 +9,7 @@ Source0:	http://ffmpegthumbnailer.googlecode.com/files/%{name}-%{version}.tar.gz
 URL:		http://code.google.com/p/ffmpegthumbnailer/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libav-devel
+BuildRequires:	ffmpeg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
