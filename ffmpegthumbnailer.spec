@@ -1,11 +1,11 @@
 Summary:	Lightweight video thumbnailer
 Name:		ffmpegthumbnailer
-Version:	2.0.8
-Release:	3
+Version:	2.0.9
+Release:	1
 License:	GPL v2
 Group:		Applications/Graphics
 Source0:	http://ffmpegthumbnailer.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	03e081f89778cd5e4fce30b29a4630e1
+# Source0-md5:	915450d09844d86e2d7fa50043d0924b
 URL:		http://code.google.com/p/ffmpegthumbnailer/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -49,6 +49,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
